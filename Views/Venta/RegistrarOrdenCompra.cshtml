@@ -1,0 +1,183 @@
+@{
+    ViewData["Title"] = "Registrar Orden de Compra";
+    
+}
+
+
+<head>
+	<title>Document</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+   
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/css/bootstrap-datepicker.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/js/bootstrap-datepicker.min.js"></script>
+</head>
+<style type="text/css">
+    table {
+    	width: 100%;
+    }
+	.container{
+		width:100%;
+	}
+	.btn1 {
+		position: absolute;
+		left: 82%
+	}
+	.btn2 {
+		position: absolute;
+		left: 70%
+	}
+	.btn3 {
+		position: absolute;
+		left: 80%
+	}
+	.btn4 {
+		position: absolute;
+		left: 90%
+	}
+	
+	
+
+</style>
+<body>
+	<center><h1>Registrar Orden de Compra de Requerimientos de Maquinas<h1></center>
+	<table>
+		<tr>
+		<td><div class="form-group">
+    <label class="col-sm-2 col-form-label">Nro Orden Compra:</label>
+    <div class="col-sm-4">
+      <input type="text" class="form-control" id="" placeholder="">
+    </div>
+  </div>	 </td>
+		<td> <div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="form-group">
+            	<label class="col-sm-4   col-form-label">Fecha de Entrega:</label>
+                <div class='input-group input-append date' id='datetimepicker1'>
+                	
+                    <input type='text' class="form-control">
+                
+                    <span class="input-group-addon add-on">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <script>
+            $(document).ready(function(){
+            	$('#datetimepicker1')
+                 .datepicker({
+                 	format: 'mm/dd/yyyy',
+                 	startDate: '01/01/2018',
+                 	endDate: '12/30/2028',
+                 });
+            });
+        </script>
+    </div>
+</div></td>
+	</tr>
+
+	<tr>
+		<td><div class="form-group">
+    <label class="col-sm-2 col-form-label">Codigo de Cotización: </label>
+    <div class="col-sm-4">
+      <input type="text" class="form-control" id="" placeholder="">
+    </div>
+    <div class="input-group-append">
+    <button class="btn btn-outline-secondary" type="button">Consultar Cotizacion</button>
+  </div>
+  </div>	</td>
+	</tr>
+	<tr>
+		<td><div class="form-group">
+    <label class="col-sm-2 col-form-label">R.U.C: </label>
+    <div class="col-sm-4">
+      <input type="text" class="form-control" id="" placeholder="">
+    </div>
+    <div class="input-group-append">
+    <button class="btn btn-outline-secondary" type="button">Buscar Cliente</button>
+  </div>
+  </div>	</td>
+	</tr>
+	<tr>
+		<td><div class="form-group">
+    <label class="col-sm-2 col-form-label">Empresa: </label>
+    <div class="col-sm-4">
+      <input type="text" class="form-control" id="" placeholder="">
+    </div>
+  </div>	</td>
+		
+	</tr>
+	</table>
+	
+    <br>
+    <br>
+	<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">Item</th>
+      <th scope="col">Cantidad</th>
+      <th scope="col">Materiales</th>
+      <th scope="col">Marca</th>
+      <th scope="col">Caracteristica</th>
+      <th scope="col">Garantia</th>
+      <th scope="col">Precio Unitario</th>
+      <th scope="col">Precio Total</th>
+
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>15</td>
+      <td>Computadora de Escritorio</td>
+      <td></td>
+      <td></td>
+      <td>1 año</td>
+      <td>3000</td>
+      <td>45000</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<div class="form-group">
+	 <label class="col-sm-2 col-form-label">SubTotal: </label>
+</div>
+ <div class="input-group-append">
+    <button class="btn btn-outline-secondary btn1" type="button">Exportar Documento</button>
+  </div>
+  <br>
+<br>
+<div class="form-group">
+	 <label class="col-sm-2 col-form-label">IGV: </label>
+</div>
+<div class="input-group-append">
+    <button class="btn btn-outline-secondary btn2" type="button">Regresar</button>
+  </div>
+  <div class="input-group-append">
+    <button class="btn btn-outline-secondary btn3" type="button">Eliminar</button>
+  </div>
+  <div class="input-group-append">
+    <button class="btn btn-outline-secondary btn4" type="button">Grabar</button>
+  </div>
+<br>
+<div class="form-group">
+	 <label class="col-sm-2 col-form-label">Total: </label>
+</div>
+
+</body>

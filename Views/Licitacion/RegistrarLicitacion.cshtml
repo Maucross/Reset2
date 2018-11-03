@@ -1,0 +1,109 @@
+@{
+    ViewData["Title"] = "RegistrarLicitacion";
+}
+
+
+<div class="row">
+    <div class="col-md-12">
+        <h1 style="text-align:center">Registrar Licitación de Requerimientos de Máquina</h2>
+        
+    </div>
+</div>
+<div class="row">    
+    <div class="col-md-6">
+        Número de Licitacion: <input type="text" value="08966413">
+    </div>
+    <div class="col-md-3">
+       Usuario: <input type="text" value="Alejandro Uribe">
+    </div>
+    <div class="col-md-3">
+        Fecha de Creación:<input type="date">
+    </div>
+</div><br>
+<div  class="row">
+   
+    <div class="borde col-md-6">
+        <h3>Datos del Cliente</h3>
+            <div>RUC: <input type="text" value="992775138"></div><br>
+            <div>
+                Empresa: <input type="text" value="US ITEM S.A">
+                <button type="button"class="btn btn-primary btn-sm">Buscar Cliente</button>
+                <a class="btn btn-primary btn-sm" href="javascript:window.open('./../Integrado/MantenerCliente','','width=500, height=450, left=100, top=100'); void 0">Nuevo Cliente</a>
+            </div><br>
+            <div>
+                Fecha de Entrega: <input type="date">
+            </div><br>
+    </div>
+    <div class="borde col-md-6">
+        <h3>Datos de Máquinas Licitadas</h3>
+        <div>
+            Descripción:  <input type="text" value="Computadora">
+            Característica: <input type="text" value="Computadora">
+        </div><br>
+        <div>
+            Garantía:  <input type="text"  value="3" size="1"> <select><option value="Meses">Meses</option>
+            <option value="Años">Años</option></select> 
+            Marca: <input type="text" value="Computadora">
+            Cantidad: <input type="text"  value="3" size="1">
+        </div><br>
+        <div>
+            <button type="button"class="btn btn-primary btn-sm">Añadir Máquina</button>
+        </div><br>
+    </div>
+</div><br>
+<div class="row">
+    <div class="col-md-12">
+      <table style="width:100%">
+          <tr>
+              <th>Item</th>
+              <th>Cantidad</th>
+              <th>Materiales</th>
+              <th>Marca</th>
+              <th>Característica</th>
+              <th>Garantía</th>
+              <th></th>
+          </tr>
+          <tr>
+              <td>1</td>
+              <td>15</td>
+              <td>Computadora de Escritorio</td>
+              <td></td>
+              <td></td>
+              <td>1 año</td>
+              <td>
+                 <a class="btn btn-primary btn-sm" href="javascript:window.open('./../Integrado/DetalleMaquina','','width=650, height=450, left=100, top=100'); void 0">Detalles</a>   
+                <input type="button" value="Eliminar">  
+               </td>
+          </tr>
+          <tr>
+          </tr>
+          <tr>
+              
+          </tr>
+          <tr>
+              
+          </tr>
+          <tr>
+              
+          </tr>
+          <tr></tr>
+      </table>
+    </div>
+
+</div><br>
+<div class="row">
+    <div class="col-md-8">
+    </div>
+    <div style="text-align:right" class="col-md-2">
+        <button type="button"class="btn btn-primary btn-sm">Exportar Documento</button>
+    </div>
+</div><br>
+<div class="row">
+    <div class="col-md-7">
+    </div>
+    <div style="text-align:right" class="col-md-5">
+       <button type="button"class="btn btn-primary btn-sm">Regresar</button>
+       <button type="button"class="btn btn-primary btn-sm">Limpiar</button>
+       <button type="button"class="btn btn-primary btn-sm">Grabar</button>
+    </div>
+</div>
